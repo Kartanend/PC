@@ -1,9 +1,6 @@
 import requests
 from bs4 import BeautifulSoup as bs
 import argparse
-from PIL import Image
-from PIL.ExifTags import TAGS
-import glob
 import os
 
 parser=argparse.ArgumentParser()
