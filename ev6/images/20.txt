@@ -1,0 +1,65 @@
+Image: ./images/20
+  Format: JPEG (Joint Photographic Experts Group JFIF format)
+  Geometry: 300x200
+  Class: DirectClass
+  Type: true color
+  Depth: 8 bits-per-pixel component
+  Channel Depths:
+    Red:      8 bits
+    Green:    8 bits
+    Blue:     8 bits
+  Channel Statistics:
+    Red:
+      Minimum:                     0.00 (0.0000)
+      Maximum:                 65535.00 (1.0000)
+      Mean:                    13916.74 (0.2124)
+      Standard Deviation:      11707.81 (0.1786)
+    Green:
+      Minimum:                     0.00 (0.0000)
+      Maximum:                 65535.00 (1.0000)
+      Mean:                    29194.63 (0.4455)
+      Standard Deviation:      12083.62 (0.1844)
+    Blue:
+      Minimum:                     0.00 (0.0000)
+      Maximum:                 65535.00 (1.0000)
+      Mean:                    26795.00 (0.4089)
+      Standard Deviation:      10456.32 (0.1596)
+  Filesize: 30.0Ki
+  Interlace: Line
+  Orientation: TopLeft
+  Background Color: white
+  Border Color: #DFDFDF
+  Matte Color: #BDBDBD
+  Page geometry: 300x200+0+0
+  Compose: Over
+  Dispose: Undefined
+  Iterations: 0
+  Compression: JPEG
+  JPEG-Quality: 91
+  JPEG-Colorspace: 2
+  JPEG-Colorspace-Name: RGB
+  JPEG-Sampling-factors: 2x2,1x1,1x1
+  Signature: 82d2492ef4ad37b5abb60b9556383972f8528e72acd8553fc7beb1e675409cc1
+  Profile-iptc: 8428 bytes
+    Category:
+  0x00000000: ffff1757 4fff267f ffffffff ff663dff ff2c0e61  x---WO-&------f=--,-
+  0x00000014: 69ffffff 1f13ffff 2e37ffff ff10ff1a 472c1fff  ai-------.7------G,-
+  0x00000028: ffffffff ff1cffff 1e2274ff ffffff74 ff18ff48  ----------"t----t---
+  0x0000003c: ff46ffff ffffff6d ff613aff ff3cffff ff5cff44  H-F-----m-a:--<---\-
+  0x00000050: 7035ff56 31ff6aff ffffffff ffff32ff 69637d47  Dp5-V1-j-------2-ic
+  0x00000064: 4738ffff 68ffffff ff63ff6e 35ffffff ffff00    }G8--h----
+  Profile-EXIF: 6373 bytes
+    Orientation: 1
+    X Resolution: 720000/10000
+    Y Resolution: 720000/10000
+    Resolution Unit: 2
+    Software: Adobe Photoshop 21.2 (Macintosh)
+    Date Time: 2020:08:06 11:50:05
+    Exif Offset: 168
+    Color Space: 65535
+    Exif Image Width: 300
+    Exif Image Length: 200
+  Profile-XMP: 3513 bytes
+  Tainted: False
+  Elapsed Time: 0m:0.001091s
+  Pixels Per Second: 52.4Mi

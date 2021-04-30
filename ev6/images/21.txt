@@ -1,0 +1,46 @@
+Image: ./images/21
+  Format: JPEG (Joint Photographic Experts Group JFIF format)
+  Geometry: 300x200
+  Class: DirectClass
+  Type: true color
+  Depth: 8 bits-per-pixel component
+  Channel Depths:
+    Red:      8 bits
+    Green:    8 bits
+    Blue:     8 bits
+  Channel Statistics:
+    Red:
+      Minimum:                     0.00 (0.0000)
+      Maximum:                 65535.00 (1.0000)
+      Mean:                    38892.05 (0.5935)
+      Standard Deviation:      19635.64 (0.2996)
+    Green:
+      Minimum:                     0.00 (0.0000)
+      Maximum:                 65535.00 (1.0000)
+      Mean:                    39684.62 (0.6055)
+      Standard Deviation:      20163.76 (0.3077)
+    Blue:
+      Minimum:                     0.00 (0.0000)
+      Maximum:                 65535.00 (1.0000)
+      Mean:                    37810.78 (0.5770)
+      Standard Deviation:      21454.04 (0.3274)
+  Resolution: 72x72 pixels/inch
+  Filesize: 75.6Ki
+  Interlace: No
+  Orientation: Unknown
+  Background Color: white
+  Border Color: #DFDFDF
+  Matte Color: #BDBDBD
+  Page geometry: 300x200+0+0
+  Compose: Over
+  Dispose: Undefined
+  Iterations: 0
+  Compression: JPEG
+  JPEG-Quality: 100
+  JPEG-Colorspace: 2
+  JPEG-Colorspace-Name: RGB
+  JPEG-Sampling-factors: 1x1,1x1,1x1
+  Signature: eee4689e4c1587fd9635112386acd35218361110dc007afa73dcad151c7cd1fd
+  Tainted: False
+  Elapsed Time: 0m:0.001502s
+  Pixels Per Second: 38.1Mi

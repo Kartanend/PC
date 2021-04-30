@@ -1,0 +1,51 @@
+Image: ./images/8
+  Format: PNG (Portable Network Graphics)
+  Geometry: 144x140
+  Class: DirectClass
+  Type: true color with transparency
+  Depth: 8 bits-per-pixel component
+  Channel Depths:
+    Red:      1 bits
+    Green:    8 bits
+    Blue:     8 bits
+    Opacity:  8 bits
+  Channel Statistics:
+    Red:
+      Minimum:                     0.00 (0.0000)
+      Maximum:                 65535.00 (1.0000)
+      Mean:                    36210.04 (0.5525)
+      Standard Deviation:      32586.97 (0.4972)
+    Green:
+      Minimum:                     0.00 (0.0000)
+      Maximum:                 65535.00 (1.0000)
+      Mean:                    27590.35 (0.4210)
+      Standard Deviation:      24837.90 (0.3790)
+    Blue:
+      Minimum:                     0.00 (0.0000)
+      Maximum:                 65535.00 (1.0000)
+      Mean:                     2067.22 (0.0315)
+      Standard Deviation:       2492.75 (0.0380)
+    Opacity:
+      Minimum:                     0.00 (0.0000)
+      Maximum:                 65535.00 (1.0000)
+      Mean:                    30544.79 (0.4661)
+      Standard Deviation:      32286.16 (0.4927)
+  Opacity: (  0,  0,  0,255)	  #000000FF
+  Gamma: 0.45455
+  Filesize: 3.8Ki
+  Interlace: No
+  Orientation: Unknown
+  Background Color: white
+  Border Color: #DFDFDF00
+  Matte Color: #BDBDBD00
+  Page geometry: 144x140+0+0
+  Compose: Over
+  Dispose: Undefined
+  Iterations: 0
+  Compression: Zip
+  Png:IHDR.color-type-orig: 6
+  Png:IHDR.bit-depth-orig: 8
+  Signature: a96368cd71e3a10a0ea225122d0078d243293bdb3abd436c6de4190a0eb7783f
+  Tainted: False
+  Elapsed Time: 0m:0.000374s
+  Pixels Per Second: 51.4Mi

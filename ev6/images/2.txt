@@ -1,0 +1,49 @@
+Image: ./images/2
+  Format: JPEG (Joint Photographic Experts Group JFIF format)
+  Geometry: 283x143
+  Class: DirectClass
+  Type: true color
+  Depth: 8 bits-per-pixel component
+  Channel Depths:
+    Red:      8 bits
+    Green:    8 bits
+    Blue:     8 bits
+  Channel Statistics:
+    Red:
+      Minimum:                     0.00 (0.0000)
+      Maximum:                 65535.00 (1.0000)
+      Mean:                    36506.24 (0.5570)
+      Standard Deviation:      22689.01 (0.3462)
+    Green:
+      Minimum:                     0.00 (0.0000)
+      Maximum:                 65535.00 (1.0000)
+      Mean:                    36226.71 (0.5528)
+      Standard Deviation:      20505.09 (0.3129)
+    Blue:
+      Minimum:                     0.00 (0.0000)
+      Maximum:                 65535.00 (1.0000)
+      Mean:                    32371.65 (0.4940)
+      Standard Deviation:      27138.17 (0.4141)
+  Filesize: 31.4Ki
+  Interlace: No
+  Orientation: Unknown
+  Background Color: white
+  Border Color: #DFDFDF
+  Matte Color: #BDBDBD
+  Page geometry: 283x143+0+0
+  Compose: Over
+  Dispose: Undefined
+  Iterations: 0
+  Compression: JPEG
+  JPEG-Quality: 94
+  JPEG-Colorspace: 2
+  JPEG-Colorspace-Name: RGB
+  JPEG-Sampling-factors: 1x1,1x1,1x1
+  Signature: bcc6c661f2a5b4327843e00a204a9fdc6147a106ef605539e1b7f7e7e25a0495
+  Profile-EXIF: 22 bytes
+    unknown
+  Profile-APP12: 15 bytes
+  Profile-XMP: 784 bytes
+  Tainted: False
+  Elapsed Time: 0m:0.000697s
+  Pixels Per Second: 55.3Mi

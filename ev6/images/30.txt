@@ -1,0 +1,51 @@
+Image: ./images/30
+  Format: PNG (Portable Network Graphics)
+  Geometry: 320x258
+  Class: DirectClass
+  Type: true color with transparency
+  Depth: 8 bits-per-pixel component
+  Channel Depths:
+    Red:      8 bits
+    Green:    8 bits
+    Blue:     8 bits
+    Opacity:  8 bits
+  Channel Statistics:
+    Red:
+      Minimum:                     0.00 (0.0000)
+      Maximum:                 65535.00 (1.0000)
+      Mean:                    18574.65 (0.2834)
+      Standard Deviation:      26418.51 (0.4031)
+    Green:
+      Minimum:                     0.00 (0.0000)
+      Maximum:                 65535.00 (1.0000)
+      Mean:                    14322.46 (0.2185)
+      Standard Deviation:      18169.33 (0.2772)
+    Blue:
+      Minimum:                     0.00 (0.0000)
+      Maximum:                 65535.00 (1.0000)
+      Mean:                     8549.31 (0.1305)
+      Standard Deviation:      16320.47 (0.2490)
+    Opacity:
+      Minimum:                     0.00 (0.0000)
+      Maximum:                 65535.00 (1.0000)
+      Mean:                    37206.05 (0.5677)
+      Standard Deviation:      31583.13 (0.4819)
+  Opacity: (  0,  0,  0,255)	  #000000FF
+  Filesize: 26.1Ki
+  Interlace: No
+  Orientation: Unknown
+  Background Color: white
+  Border Color: #DFDFDF00
+  Matte Color: #BDBDBD00
+  Page geometry: 320x258+0+0
+  Compose: Over
+  Dispose: Undefined
+  Iterations: 0
+  Compression: Zip
+  Png:IHDR.color-type-orig: 6
+  Png:IHDR.bit-depth-orig: 8
+  Software: Adobe ImageReady
+  Signature: f5edadbc78282d62e551da17729a48459f61fdde12df5b1df83b5d718f5b90c5
+  Tainted: False
+  Elapsed Time: 0m:0.006426s
+  Pixels Per Second: 12.3Mi

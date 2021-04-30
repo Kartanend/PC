@@ -1,0 +1,61 @@
+Image: ./images/19
+  Format: JPEG (Joint Photographic Experts Group JFIF format)
+  Geometry: 300x200
+  Class: DirectClass
+  Type: true color
+  Depth: 8 bits-per-pixel component
+  Channel Depths:
+    Red:      8 bits
+    Green:    8 bits
+    Blue:     8 bits
+  Channel Statistics:
+    Red:
+      Minimum:                 10537.00 (0.1608)
+      Maximum:                 65278.00 (0.9961)
+      Mean:                    36138.53 (0.5514)
+      Standard Deviation:      13285.08 (0.2027)
+    Green:
+      Minimum:                  9252.00 (0.1412)
+      Maximum:                 63993.00 (0.9765)
+      Mean:                    34114.54 (0.5206)
+      Standard Deviation:      17154.01 (0.2618)
+    Blue:
+      Minimum:                  8224.00 (0.1255)
+      Maximum:                 65021.00 (0.9922)
+      Mean:                    35078.17 (0.5353)
+      Standard Deviation:      17997.57 (0.2746)
+  Filesize: 65.2Ki
+  Interlace: No
+  Orientation: TopLeft
+  Background Color: white
+  Border Color: #DFDFDF
+  Matte Color: #BDBDBD
+  Page geometry: 300x200+0+0
+  Compose: Over
+  Dispose: Undefined
+  Iterations: 0
+  Compression: JPEG
+  JPEG-Quality: 99
+  JPEG-Colorspace: 2
+  JPEG-Colorspace-Name: RGB
+  JPEG-Sampling-factors: 1x1,1x1,1x1
+  Signature: 7b8c4a4c2e478c4d3515d2233f59c8ebf8ea17d9bc528f821f9942ee454c7d45
+  Profile-color: 3144 bytes
+  Profile-iptc: 7382 bytes
+    unknown:
+  ü‡ÿ
+  Profile-EXIF: 5340 bytes
+    Orientation: 1
+    X Resolution: 720000/10000
+    Y Resolution: 720000/10000
+    Resolution Unit: 2
+    Software: Adobe Photoshop CC 2017 (Macintosh)
+    Date Time: 2021:01:26 14:06:16
+    Exif Offset: 172
+    Color Space: 1
+    Exif Image Width: 300
+    Exif Image Length: 200
+  Profile-XMP: 3745 bytes
+  Tainted: False
+  Elapsed Time: 0m:0.001307s
+  Pixels Per Second: 43.8Mi
