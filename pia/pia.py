@@ -40,6 +40,8 @@ try:
             ip=args.ip
             csvName=args.csvFile
             
+        ip=args.ip
+        csvName=args.csvFile    
         scan_red.scaner_red(ip,csvName)
     
     if args.task == "obtener-hash-archivo" or task ==2:
