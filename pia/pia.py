@@ -14,6 +14,7 @@ parser.add_argument("--csvFile",
 args = parser.parse_args()
 
 try:
+    task = 0
     if args.task == None:
         print("Elige la tarea a realizar")
         print("1.-Escaneo de puertos de toda una red"
