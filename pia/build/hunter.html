@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>hunter module &#8212; PIA-PC 1.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="pia module" href="pia.html" />
+    <link rel="prev" title="getFileHash module" href="getFileHash.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-hunter">
+<span id="hunter-module"></span><h1>hunter module<a class="headerlink" href="#module-hunter" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="hunter.obtener_Correos">
+<span class="sig-prename descclassname"><span class="pre">hunter.</span></span><span class="sig-name descname"><span class="pre">obtener_Correos</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">apikey</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dominio</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limite</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hunter.html#obtener_Correos"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#hunter.obtener_Correos" title="Permalink to this definition">¶</a></dt>
+<dd><p>Realiza una peticion a la API de hunter para obtener correos publicos del dominio indicado.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>apikey</strong> (<em>str</em>) – Es la api key necesaria para poder realizar la petición a la API.</p></li>
+<li><p><strong>dominio</strong> (<em>str</em>) – Es el dominio de correos a buscar. Por ejemplo:
+- uanl.edu.mx</p></li>
+<li><p><strong>limite</strong> (<em>int</em>) – Es el limite para la cantidad de correos a recibir como maximo.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>[</dt><dd><p>”<a class="reference external" href="mailto:correo1&#37;&#52;&#48;uanl&#46;edu&#46;mx">correo1<span>&#64;</span>uanl<span>&#46;</span>edu<span>&#46;</span>mx</a>”, “<a class="reference external" href="mailto:correo2&#37;&#52;&#48;uanl&#46;edu&#46;mx">correo2<span>&#64;</span>uanl<span>&#46;</span>edu<span>&#46;</span>mx</a>”</p>
+</dd>
+</dl>
+<p>]</p>
+</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Regresa una lista de correos recibidos. Por ejemplo</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">PIA-PC</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">pia</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="banner.html">banner module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cifrado.html">cifrado module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="correos.html">correos module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="descargar_imagenes.html">descargar_imagenes module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getFileHash.html">getFileHash module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">hunter module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pia.html">pia module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scan_red.html">scan_red module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scanner.html">scanner module</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">pia</a><ul>
+      <li>Previous: <a href="getFileHash.html" title="previous chapter">getFileHash module</a></li>
+      <li>Next: <a href="pia.html" title="next chapter">pia module</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, DMV, JAQO, FRHR, DACP.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.0.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/hunter.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -4,6 +4,20 @@ import logging
 
 
 def env_correo(user,pwd,to,subject,text):
+    """
+    Envía un correo desde la dirección de origen teniendo su contraseña hacia un correo destino
+    con el asunto y cuerpo recibidos.
+
+    Args:
+        user (str): Es la direccion de correo desde la cual se enviara el correo.
+        pwd (str): Es la contraseña del correo de origen recibida en la variable user.
+        to (str): Es la direccion de correo destino que recibira el correo.
+        subject (str): Es el asunto del correo a enviar.
+        text (str): Es el texto del correo a enviar.
+
+    Prints:
+        Imprime los mensajes de progreso de envio del correo.
+    """
     msg = MIMEText(text)
     msg['From'] = user
     msg['To'] = to

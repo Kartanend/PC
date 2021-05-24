@@ -1,6 +1,17 @@
 from time import sleep
 
 def encriptar(mess, key):
+    """
+    Encripta un mensaje usando cifrado Cesar y luego imprime el mensaje en base a la clave.
+
+    Args:
+        mess (str): Es el mensaje a encriptar.
+
+        key (str): Es la llave que dependiendo de su longitud saldra el mensaje cifrado de cierta manera.
+    
+    Prints:
+        Imprime el mensaje encriptado que se obtuvo a partir de la clave.
+    """
     print("Procesando cifrado...")
     key = len(key)
 

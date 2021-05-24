@@ -4,6 +4,22 @@ import logging
 
 
 def scaner_red(ip,csvName):
+    """
+    Escanea la red usando nmap a una IP o rango de ip's.
+
+    Args:
+        ip (str): Es la direccion o direcciones ip a escanear. Ejemplos:
+            -192.168.0.1 para escanear una sola ip
+            -192.168.0.0/24 para escanear un rango de direcciones ip
+        
+        csvName (str): Es el nombre del archivo con el que se guardará el reporte csv.
+
+    Prints:
+        Imprime el estado de cada puerto agrupado por su ip correspondiente.
+    
+    Generates:
+        Genera un archivo csv donde guarda el reporte del escaneo.
+    """
     try:
         nmScan = nmap.PortScanner()
         print("Escaneando...")

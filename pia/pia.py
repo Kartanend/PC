@@ -2,17 +2,37 @@ import argparse
 import scan_red
 import getFileHash
 import cifrado
-import correos
 import getpass
 import subprocess
 import logging
+from correos import env_correo
 from hunter import obtener_Correos
 from descargar_imagenes import download_img
 from banner import obtener_banner
 from scanner import arp_scan
 
 
-if __name__ == "__main__":
+def main():
+    """
+    Programa que permite realizar varias tareas en campo de ciberseguridad.
+
+    Args:
+        ip (str): Dirección ip en formato CIDR para la tarea de escaneo. Ej: 
+                  - 192.168.1.1/24
+        csvFile (str): Nombre de archivo csv para resultados de scaner de red.
+        mensaje (str): Mensaje a cifrar.
+        clave (str): argumento necesario para cifrar mensaje
+        ruta (str): argumento necesario para identificar el archivo a obtener el hash
+        usuario (str): Direccion de correo de origen para enviar un correo
+        para (str): Direccion de correo destino que recibe el correo a enviar
+        asunto (str): Asunto del correo a enviar
+        cuerpo (str): Cuerpo del correo a enviar
+        txt (str): Nombre de archivo de texto que guardara informacion de procesos del sistema o el resultado de los correos encontrados
+        limite (int): Limite de correos publicos a buscar del dominio indicado
+        apikey (str): Key para poder realizar peticiones a la API de hunter
+        dominio (str): Dominio de correos para buscar correos publicos
+        url (str): URL de pagina web para buscar y descargar sus imagenes
+    """
     parser= argparse.ArgumentParser()
     parser.add_argument("--task", help="tarea a realizar: 1.- [escaneo-de-puertos] Escaneo de puertos de una IP, un rango de IP's o toda una red"
                 "\n2.- [obtener-hash-archivo] Obtener hash de archivo"
@@ -32,10 +52,11 @@ if __name__ == "__main__":
                         help="nombre de archivo csv para resultados de scaner de"
                         "red")
     #ARGUMENTOS PARA EL CIFRADO
-    parser.add_argument('--mensaje', dest='mess', help='mensaje a esconder')
+    parser.add_argument('--mensaje', dest='mess', help='mensaje a cifrar')
     parser.add_argument('--clave', dest='key', help='argumento necesario para cifrar')
+    parser.add_argument('--ruta', dest='ruta', help='argumento necesario para obtener hash de un archivo')
 
-    #AERGUMENTOS PARA EL ENVIO DE CORREOS
+    #ARGUMENTOS PARA EL ENVIO DE CORREOS
     parser.add_argument('--usuario', dest='usuario', help='Quien envia')
     parser.add_argument('--para', dest='para', help='Quien envia')
     parser.add_argument('--asunto', dest='asunto', help='Quien envia')
@@ -79,7 +100,11 @@ if __name__ == "__main__":
             scan_red.scaner_red(ip,csvName)
         
         elif args.task == "obtener-hash-archivo" or task == 2:
-            getFileHash.getHash()
+            ruta = args.ruta
+            if ruta == None:
+                ruta = input("Ingresa ruta de archivo: ")
+            
+            getFileHash.getHash(ruta)
 
         elif args.task == "cifrar-mensaje" or task == 3:
             message = args.mess
@@ -114,7 +139,7 @@ if __name__ == "__main__":
             if cuerpo == None:
                 cuerpo = input("Escribe tu mensaje: ")
                 
-            correos.env_correo(usuario,pwd,para,asunto,cuerpo)
+            env_correo(usuario,pwd,para,asunto,cuerpo)
                 
         elif args.task == "obtener-procesos" or task == 5:
             comando = "powershell -ExecutionPolicy ByPass -File procesos.ps1"
@@ -173,3 +198,6 @@ if __name__ == "__main__":
         exit()              
     except Exception as e:
         logging.error("Exception error")
+
+if __name__ == "__main__":
+    main()

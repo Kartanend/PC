@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>descargar_imagenes module &#8212; PIA-PC 1.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="getFileHash module" href="getFileHash.html" />
+    <link rel="prev" title="correos module" href="correos.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-descargar_imagenes">
+<span id="descargar-imagenes-module"></span><h1>descargar_imagenes module<a class="headerlink" href="#module-descargar_imagenes" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="descargar_imagenes.download">
+<span class="sig-prename descclassname"><span class="pre">descargar_imagenes.</span></span><span class="sig-name descname"><span class="pre">download</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">folder</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/descargar_imagenes.html#download"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#descargar_imagenes.download" title="Permalink to this definition">¶</a></dt>
+<dd><p>Descarga una imagen de la url indicada y luego la guarda en el directorio indicado.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>url</strong> (<em>str</em>) – Es la url donde hará la petición para obtener la imagen y luego guardarla.</p></li>
+<li><p><strong>folder</strong> (<em>str</em>) – Es el directorio donde guardará la imagen.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Generates:</dt><dd><p>En caso de haber podido obtener la imagen la guarda dentro del directorio especificado.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="descargar_imagenes.download_img">
+<span class="sig-prename descclassname"><span class="pre">descargar_imagenes.</span></span><span class="sig-name descname"><span class="pre">download_img</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url_descarga</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/descargar_imagenes.html#download_img"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#descargar_imagenes.download_img" title="Permalink to this definition">¶</a></dt>
+<dd><p>Realiza web scrapping para poder obtener las etiquetas y el origen de cada imagen
+para poder armar la url de cada imagen a descargar encontrada.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>url_descarga</strong> (<em>str</em>) – Es la url de la pagina a buscar todas las imagenes que contiene.</p></li>
+<li><p><strong>directory</strong> (<em>str</em>) – <p>Es la direccion del directorio relativa o absoluta donde se guardaran
+todas las imagenes. Por ejemplo:</p>
+<blockquote>
+<div><ul>
+<li><p>C:/directorio1/directorio2</p></li>
+<li><p>imagenes/</p></li>
+</ul>
+</div></blockquote>
+</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Prints:</dt><dd><p>Imprime si las imagenes fueron guardadas o error en caso contrario.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">PIA-PC</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">pia</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="banner.html">banner module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cifrado.html">cifrado module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="correos.html">correos module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">descargar_imagenes module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getFileHash.html">getFileHash module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hunter.html">hunter module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pia.html">pia module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scan_red.html">scan_red module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scanner.html">scanner module</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">pia</a><ul>
+      <li>Previous: <a href="correos.html" title="previous chapter">correos module</a></li>
+      <li>Next: <a href="getFileHash.html" title="next chapter">getFileHash module</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, DMV, JAQO, FRHR, DACP.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.0.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/descargar_imagenes.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
