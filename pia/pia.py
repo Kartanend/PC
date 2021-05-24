@@ -9,6 +9,7 @@ import logging
 from hunter import obtener_Correos
 from descargar_imagenes import download_img
 from banner import obtener_banner
+from scanner import arp_scan
 
 
 if __name__ == "__main__":
@@ -20,9 +21,10 @@ if __name__ == "__main__":
                 "\n5.- [obtener-procesos] Imprime los procesos del sistema y los guarda en un archivo txt"
                 "\n6.- [obtener-correos] Obtiene correos publicos de un dominio"
                 "\n7.- [descargar-imagenes] Descarga imagenes de una pagina web si es posible"
-                "\n8.- [obtener-banner] Trata de obtener el banner de algun servidor web.",
+                "\n8.- [obtener-banner] Trata de obtener el banner de algun servidor web."
+                "\n9.- [obtener-macaddress] Intenta obtener mac address por medio de una o varias ip(s)",
                 choices=["escaneo-de-puertos", "obtener-hash-archivo", "cifrar-mensaje", "enviar-correo",
-                         "obtener-procesos", "obtener-correos", "descargar-imagenes", "obtener-banner"])
+                         "obtener-procesos", "obtener-correos", "descargar-imagenes", "obtener-banner", "obtener-macaddress"])
     parser.add_argument("--ip", 
                         help="dirección ip en formato CIDR para la tarea de "
                         "escaneo\nEj: 192.168.1.1/24")
@@ -60,7 +62,8 @@ if __name__ == "__main__":
                 "\n5.-Obtener procesos del sistema"
                 "\n6.-Obtener correos de un dominio"
                 "\n7.-Descargar imagenes de una pagina web"
-                "\n8.-Obtener el banner de un servidor web")
+                "\n8.-Obtener el banner de un servidor web"
+                "\n9.-Obtener Mac Address de una Ip")
             task=int(input("Opcion seleccionada-> "))
 
         if args.task == "escaneo-de-puertos" or task == 1:
@@ -152,6 +155,16 @@ if __name__ == "__main__":
                 url = input("Ingrese una url para tratar de obtener su banner: ")
             
             obtener_banner(url)
+
+        elif args.task == "obtener-macaddress" or task == 9:
+            ip = args.ip
+            if ip == None:
+                ip = input("Ingrese la dirección ip: ")
+
+            resultados = arp_scan(ip)
+
+            for resultado in resultados:
+                print(f"Ip: {resultado['IP']} ==> Mac Address: {resultado['MAC']}")
 
         else:
             print("Opcion no valida, terminando programa...")
