@@ -1,10 +1,11 @@
 import hashlib
 import sys
+import logging
 
 def getHash():
     print("Ingresa ruta de archivo: ")
     ruta=input()
-    h = hashlib.sha256()
+    h = hashlib.sha512()
     BLOCK_SIZE= 65536
     try:
         with open(ruta,'rb') as f:
@@ -13,7 +14,7 @@ def getHash():
                 h.update(fb)
                 fb = f.read(BLOCK_SIZE)
     except IOError:
-        print("Archivo no encontrado")
+        logging.error()("Archivo no encontrado")
         sys.exit()
     
     

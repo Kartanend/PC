@@ -1,6 +1,6 @@
 import smtplib
 from email.mime.text import MIMEText
-#import getpass
+import logging
 
 
 def env_correo(user,pwd,to,subject,text):
@@ -22,9 +22,4 @@ def env_correo(user,pwd,to,subject,text):
         smtpServer.close()
         print("[+] Mail Sent Successfully.")
     except:
-        print("[-] Sending Mail Failed.")
-
-"""user = 'test.pc.fcfm@gmail.com'
-pwd = getpass.getpass()
-sendMail(user, pwd, 'perla.vieragn@uanl.edu.mx',
-         'Re: Important', 'Test Message')"""
+        logging.error("[-] Sending Mail Failed.")
