@@ -10,7 +10,7 @@ def scaner_red(ip,csvName):
     Args:
         ip (str): Es la direccion o direcciones ip a escanear. Ejemplos:
             -192.168.0.1 para escanear una sola ip
-            -192.168.0.0/24 para escanear un rango de direcciones ip
+            -192.168.0.1-5 para escanear un rango de direcciones ip
         
         csvName (str): Es el nombre del archivo con el que se guardará el reporte csv.
 
@@ -41,5 +41,6 @@ def scaner_red(ip,csvName):
             for linea in contenido:
                 escritor.writerow(linea.split(";"))
             del escritor
-    except:
+    except Exception as e:
         logging.error("Error al escanear las ip(s)")
+        logging.error(e)

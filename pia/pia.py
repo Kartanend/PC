@@ -47,7 +47,7 @@ def main():
                          "obtener-procesos", "obtener-correos", "descargar-imagenes", "obtener-banner", "obtener-macaddress"])
     parser.add_argument("--ip", 
                         help="dirección ip en formato CIDR para la tarea de "
-                        "escaneo\nEj: 192.168.1.1/24")
+                        "escaneo\nEj: 192.168.1.1")
     parser.add_argument("--csvFile",
                         help="nombre de archivo csv para resultados de scaner de"
                         "red")
@@ -92,7 +92,7 @@ def main():
             csvName = args.csvFile
 
             if ip == None:
-                ip = input("Ingresa IP donde empezará el escaneo en formato CIDR: ")
+                ip = input("Ingresa IP donde empezará el escaneo: ")
             
             if csvName == None:
                 csvName = input("Ingresa Nombre de archivo csv para el registro: ")
